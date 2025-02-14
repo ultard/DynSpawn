@@ -1,0 +1,7 @@
+name: DynSpawn
+version: '1.0-SNAPSHOT'
+main: me.ultar.dynspawn.DynSpawn
+api-version: '1.21'
+prefix: DynSpawn
+authors: [ ultar ]
+description: Plugin for random spawning in set points or big radius
