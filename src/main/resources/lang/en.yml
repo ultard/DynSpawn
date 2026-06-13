@@ -1,0 +1,77 @@
+messages:
+  no-permission: You do not have permission to use this command!
+  player-not-found: Player not found!
+  players-only: Only players can use this command.
+  feature-disabled: This feature is disabled.
+
+  dynspawn:
+    reload: Configuration reloaded.
+    help-header: "DynSpawn commands:"
+    help-line: "  /%command%"
+
+  warp:
+    list:
+      title: "Warps:"
+      no-warps: No warps found!
+      entry: "  %name%"
+    set:
+      usage: "Usage: /warp set <name>"
+      exists: Warp already exists!
+      created: "Warp '%name%' created!"
+    remove:
+      usage: "Usage: /warp remove <name>"
+      not-found: Warp not found!
+      removed: "Warp '%name%' removed!"
+    teleport:
+      usage: "Usage: /warp teleport <name>"
+      not-found: Warp not found!
+      teleported: "Teleported to warp '%name%'!"
+
+  spawn:
+    no-regions: No spawn regions configured!
+    region:
+      usage: "Usage: /spawn region <create|set|radius|remove|list> ..."
+      create:
+        usage: "Usage: /spawn region create <name> [radius]"
+        exists: "Region '%name%' already exists!"
+        created: "Region '%name%' created with radius %radius%!"
+      set:
+        usage: "Usage: /spawn region set <name>"
+        not-found: "Region '%name%' not found!"
+        updated: "Region '%name%' center updated!"
+      radius:
+        usage: "Usage: /spawn region radius <name> <radius>"
+        invalid-radius: Invalid radius.
+        not-found: "Region '%name%' not found!"
+        updated: "Region '%name%' radius set to %radius%!"
+      remove:
+        usage: "Usage: /spawn region remove <name>"
+        not-found: "Region '%name%' not found!"
+        removed: "Region '%name%' removed!"
+      list:
+        empty: No spawn regions configured!
+        header: "Spawn regions:"
+        entry: "  %name% — world: %world%, x: %x%, z: %z%, radius: %radius%"
+
+  group:
+    disabled: Groups are disabled.
+    not-found: Group not found!
+    already-exists: Group already exists!
+    created: "Group '%name%' created!"
+    joined: "Joined group '%name%'!"
+    left: You left the group.
+    disbanded: Group disbanded because the leader left.
+    not-in-group: You are not in a group.
+    already-in-group: You are already in this group.
+    already-in-other: You are already in another group.
+    remove:
+      usage: "Usage: /group remove <player>"
+      not-member: Player is not in your group.
+      cannot-kick-leader: Cannot kick the group leader.
+      kicked: "Player '%player%' removed from the group."
+    create:
+      usage: "Usage: /group create <name>"
+    join:
+      usage: "Usage: /group join <name>"
+
+  cooldown: "You must wait %seconds% seconds before using this command again."

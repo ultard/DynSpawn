@@ -1,0 +1,6 @@
+# Spawn regions - managed via /spawn region commands
+# default:
+#   world: world
+#   x: 0
+#   z: 0
+#   radius: 1000

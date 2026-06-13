@@ -1,0 +1,18 @@
+plugin:
+  language: en
+  # Collects data about the server and sends it to bStats
+  bstats: true
+
+spawn:
+  # false — disable auto spawn on first join and death; spawn only via API/commands
+  auto-spawn: true
+  max-retries: 10
+  default-radius: 1000
+
+warp:
+  enabled: true
+  spawn_around: true
+  spawn_radius: 50
+
+groups:
+  enabled: true

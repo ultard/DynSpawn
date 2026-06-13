@@ -5,3 +5,63 @@ api-version: '1.21'
 prefix: DynSpawn
 authors: [ ultar ]
 description: Plugin for random spawning in set points or big radius
+
+commands:
+  dynspawn:
+    description: Main command for DynSpawn
+    usage: /<command> [help | reload | version]
+  warp:
+    description: Warp commands
+    usage: /<command> [list | set | remove | teleport]
+  spawn:
+    description: Spawn commands
+    usage: /<command> region [create | set | radius | remove | list]
+  group:
+    description: Group commands
+    usage: /<command> [create | join | leave | remove]
+
+permissions:
+    dynspawn.admin:
+        default: op
+
+    # Warp commands
+    dynspawn.command.warp.list:
+        default: true
+
+    dynspawn.command.warp.list.other:
+        default: op
+
+    dynspawn.command.warp.set:
+        default: op
+
+    dynspawn.command.warp.remove:
+        default: op
+
+    dynspawn.command.warp.teleport:
+        default: true
+
+    dynspawn.command.warp.teleport.other:
+        default: op
+
+    # Spawn commands
+    dynspawn.command.spawn:
+        default: op
+
+    dynspawn.command.spawn.set:
+        default: op
+
+    dynspawn.command.spawn.radius:
+        default: op
+
+    # Group commands
+    dynspawn.command.group:
+        default: true
+
+    dynspawn.command.group.create:
+        default: true
+
+    dynspawn.command.group.remove:
+        default: true
+
+    dynspawn.command.group.remove.other:
+        default: op

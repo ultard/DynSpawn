@@ -1,0 +1,77 @@
+messages:
+  no-permission: У вас нет прав на использование этой команды!
+  player-not-found: Игрок не найден!
+  players-only: Эту команду могут использовать только игроки.
+  feature-disabled: Эта функция отключена.
+
+  dynspawn:
+    reload: Конфигурация перезагружена.
+    help-header: "Команды DynSpawn:"
+    help-line: "  /%command%"
+
+  warp:
+    list:
+      title: "Варпы:"
+      no-warps: Варпы не найдены!
+      entry: "  %name%"
+    set:
+      usage: "Использование: /warp set <имя>"
+      exists: Варп уже существует!
+      created: "Варп '%name%' создан!"
+    remove:
+      usage: "Использование: /warp remove <имя>"
+      not-found: Варп не найден!
+      removed: "Варп '%name%' удалён!"
+    teleport:
+      usage: "Использование: /warp teleport <имя>"
+      not-found: Варп не найден!
+      teleported: "Телепорт на варп '%name%'!"
+
+  spawn:
+    no-regions: Регионы спавна не настроены!
+    region:
+      usage: "Использование: /spawn region <create|set|radius|remove|list> ..."
+      create:
+        usage: "Использование: /spawn region create <имя> [радиус]"
+        exists: "Регион '%name%' уже существует!"
+        created: "Регион '%name%' создан с радиусом %radius%!"
+      set:
+        usage: "Использование: /spawn region set <имя>"
+        not-found: "Регион '%name%' не найден!"
+        updated: "Центр региона '%name%' обновлён!"
+      radius:
+        usage: "Использование: /spawn region radius <имя> <радиус>"
+        invalid-radius: Неверный радиус.
+        not-found: "Регион '%name%' не найден!"
+        updated: "Радиус региона '%name%' установлен: %radius%!"
+      remove:
+        usage: "Использование: /spawn region remove <имя>"
+        not-found: "Регион '%name%' не найден!"
+        removed: "Регион '%name%' удалён!"
+      list:
+        empty: Регионы спавна не настроены!
+        header: "Регионы спавна:"
+        entry: "  %name% — мир: %world%, x: %x%, z: %z%, радиус: %radius%"
+
+  group:
+    disabled: Группы отключены.
+    not-found: Группа не найдена!
+    already-exists: Группа уже существует!
+    created: "Группа '%name%' создана!"
+    joined: "Вы вступили в группу '%name%'!"
+    left: Вы покинули группу.
+    disbanded: Группа распущена, так как лидер вышел.
+    not-in-group: Вы не состоите в группе.
+    already-in-group: Вы уже в этой группе.
+    already-in-other: Вы уже состоите в другой группе.
+    remove:
+      usage: "Использование: /group remove <игрок>"
+      not-member: Игрок не состоит в вашей группе.
+      cannot-kick-leader: Нельзя исключить лидера группы.
+      kicked: "Игрок '%player%' исключён из группы."
+    create:
+      usage: "Использование: /group create <имя>"
+    join:
+      usage: "Использование: /group join <имя>"
+
+  cooldown: "Подождите %seconds% сек. перед повторным использованием команды."
